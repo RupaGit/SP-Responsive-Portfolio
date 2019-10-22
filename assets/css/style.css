@@ -1,0 +1,86 @@
+h1 {
+    position: absolute;
+    left: 0;
+    padding: 5px;
+    margin: 47.5px;
+    background-color: teal;
+    color: blanchedalmond;
+    text-align: center;
+    width: 300px;
+    height: 45px;
+    vertical-align: middle;
+}
+.page {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    text-align: center;
+    border-bottom: 2px solid grey;
+}
+.content {
+    position: absolute;
+    top: 125px;
+    text-align: left;
+    margin-left: 80px;
+    width: 75%;
+    padding: 40px;
+    background-color: whitesmoke;
+}
+button {
+    background: none;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    float: right;
+    font-weight: bolder;
+    border: none;
+}
+#buttons {
+    width: 300px;
+    height:30px;
+    position: sticky;
+    margin-top: 75px;
+    margin-left: 470px;
+    /*margin-bottom: 10px;*/
+}
+body {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+#subHeader {
+    color: teal;
+    border-bottom: 2px solid lightgray;
+}
+#myPic {
+    float: left;
+    margin-right: 15px;
+}
+.myDetails {
+    text-indent: 20px;
+    font-size: large;
+    font-family: Calibri;
+    word-spacing: 7px;
+    line-height: 1.6;
+}
+#myDetails1 {
+    padding: 20px;
+    box-sizing: border-box;
+}
+.contactMe {
+    margin-left: 80px;
+    font-size: large;
+    font-weight: bold;
+    color: teal;
+    height: 450px;
+}
+footer {
+    position: absolute;
+    top: 725px;
+    text-align: left;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    width: 75%;
+    padding: 40px;
+    background: #ccc;
+}
