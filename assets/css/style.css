@@ -1,86 +1,96 @@
-h1 {
-    position: absolute;
-    left: 0;
-    padding: 5px;
-    margin: 47.5px;
-    background-color: teal;
-    color: blanchedalmond;
-    text-align: center;
-    width: 300px;
-    height: 45px;
-    vertical-align: middle;
+body {
+    background-image: url("../images/simpleBackground4.jpg");       
 }
-.page {
-    display: flex;
-    justify-content: center;
+div.wrap {
+    width: 100%;
+}
+div.pHeader {
+    width: 960px;
     position: sticky;
-    text-align: center;
-    border-bottom: 2px solid grey;
+    display: flex;
+    margin: 0 auto;
 }
-.content {
-    position: absolute;
-    top: 125px;
-    text-align: left;
-    margin-left: 80px;
-    width: 75%;
-    padding: 40px;
-    background-color: whitesmoke;
+div.topNav {
+    width: 100%;
+    top: 0;
+    border-bottom: 2px solid rgb(13, 140, 18);
 }
 button {
+    width: 75px;
+    height: 25px;
     background: none;
-    text-align: center;
-    width: 100px;
-    height: 30px;
-    float: right;
-    font-weight: bolder;
     border: none;
+    font-weight: bolder;
+    color: rgb(230, 29, 14);
 }
 #buttons {
-    width: 300px;
-    height:30px;
-    position: sticky;
-    margin-top: 75px;
-    margin-left: 470px;
-    /*margin-bottom: 10px;*/
+    margin-left: 400px;
+    margin-top: 50px;
 }
-body {
-    text-align: center;
-    width: 90%;
-    margin: auto;
+.heading1 {
+    margin-top: 30px;
+    padding: 5px;
+    color: rgb(230, 29, 14);
 }
-#subHeader {
-    color: teal;
-    border-bottom: 2px solid lightgray;
+.heading2 {
+    margin-top: 20px;
+    color: rgb(230, 29, 14);
+    border-bottom: 2px solid rgb(13, 140, 18);
+}
+div.contents {
+    width: 960px;
+    margin: 0 auto;
+    background: rgb(236, 236, 236);
+    margin-bottom: 20px;
+    padding: 15px;
 }
 #myPic {
     float: left;
-    margin-right: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 .myDetails {
-    text-indent: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: large;
-    font-family: Calibri;
-    word-spacing: 7px;
+    font-family: calibri;
+    word-spacing: 5px;
     line-height: 1.6;
 }
-#myDetails1 {
-    padding: 20px;
-    box-sizing: border-box;
-}
 .contactMe {
-    margin-left: 80px;
-    font-size: large;
-    font-weight: bold;
-    color: teal;
-    height: 450px;
+    padding: 20px;
 }
-footer {
-    position: absolute;
-    top: 725px;
-    text-align: left;
-    margin-left: 80px;
-    margin-bottom: 20px;
-    width: 75%;
-    padding: 40px;
-    background: #ccc;
+#footer
+{
+    clear: both;
+    border: 1px darkgrey;
+    background:  rgb(236, 236, 236);
+    color: rgb(230, 29, 14);
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+    vertical-align: middle;
+    line-height: normal;
+    margin: 0;
+    position: relative;
+    bottom: 0px;
+}
+
+button:hover {
+    background-color: midnightblue;
+}
+
+button:active {
+    background-color: olive;
+}
+
+.portfolioImg {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    margin-right: 25px;
+    margin-bottom: 25px;
 }
