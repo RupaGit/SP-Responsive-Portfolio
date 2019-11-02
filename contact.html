@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reach out to me</title>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
@@ -10,7 +11,7 @@
                 <div class="pHeader">
                         <h1 class="heading1" onclick="location.href = 'index.html';">Rupa's Playground</h1>
                         <div id="buttons">
-                            <button onclick="location.href = 'index.html';">About Me</button>
+                            <button onclick="location.href = 'index.html';">About</button>
                             <button onclick="location.href = 'contact.html';">Contact</button>
                             <button onclick="location.href = 'portfolio.html';">Portfolio</button>
                     </div>
@@ -20,13 +21,13 @@
                 <h2 class="heading2">Contact Me</h2>
                 <form class="contactMe">
                         Full Name:<br>
-                        <input type="text" name="firstname" size="100">
+                        <input type="text" name="firstname" id='fName'>
                         <br>
                         <br>Email address:<br>
-                        <input type="text" name="email" size="100">
+                        <input type="text" name="email" id='email'>
                         <br>
                         <br>Message:<br>
-                        <textarea rows="5" cols="100" name="message">Please enter your message here </textarea><br>
+                        <textarea name="message" placeholder='Please enter your message here'></textarea><br>
                         <br><input type="submit" name="submitInfo">
                     </form>
                 </div>
