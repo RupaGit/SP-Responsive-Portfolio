@@ -1,39 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome to my play ground</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    </head>
 
-    <body>
-        <div class="wrap"> 
-            <div class="topNav">
-                <div class="pHeader">
-                    <h1 class="heading1" onclick="location.href = 'index.html';">Rupa's Playground</h1>
-                    <div id="buttons">
-                        <button onclick="location.href = 'index.html';">About</button>
-                        <button onclick="location.href = 'contact.html';">Contact</button>
-                        <button onclick="location.href = 'portfolio.html';">Portfolio</button>
-                    </div>
-                </div> 
-            </div>
-            <div class="contents">
-                <h2 class="heading2">About Me</h2>
-                <br clear="all">
-                <img id="myPic" src="assets/images/Myimage.jpg" alt="Swarupa Popuri" width="240">
-                <div class="myDetails">
-                        <p id="myDetails1"> Hello, Thank you for visiting my page. My name is Swarupa Popuri and I am a mother of two wonderful boys. I work as a Quality Assurance team lead in a well known advertising software provider in New York city. I live on Long Island with my family.
-                        <br> <br>I have completed my M.Sc in computer science from a well known university in India and graduated with 4.0 GPA. <br>
-                        I have over 9 years of experience in QA field. In the past 9 years, I have worked in various fields such as e-commerce, education software, banking and Advertising. I am very passionate about what I work on and I have received many awards for my performance. 
-                        <br>
-                        <br>
-                        In my spare time, I usually like to spend my time cooking, painting, travelling. I also like to play board games with my kids. In the coming years, I'd like to spend some of my spare time volunteering. I am a big fan of animated movies and I think I am more excited about watching
-                        them than my kids. I am running out of ideas to write about myself. Hope this gives enough details about me. Once again, thank you for visiting my page.
-                        </p>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my play ground</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="topNav">
+            <div class="pHeader">
+                <h1 class="heading1" onclick="location.href = 'index.html';">Swarupa Popuri</h1>
+                <div id="buttons">
+                    <a href="#contents">About</a>
+                    <a href="#contactMeDiv">Contact</a>
+                    <a href="#portfolioDiv">Portfolio</a>
                 </div>
             </div>
-            <div class="footer" id="footer">My Footer</div>
         </div>
-    </body>
+        <div class="contents" id="contents">
+            <h2 class="heading2">About Me</h2>
+            <br clear="all">
+            <img id="myPic" src="assets/images/Myimage.jpg" alt="Swarupa Popuri" width="240">
+            <div class="myDetails">
+                <p id="myDetails1"> Hello, Thank you for visiting my page. My name is Swarupa Popuri and I am a mother
+                    of two wonderful boys. I work as a Quality Assurance team lead in a well known advertising software
+                    provider in New York city. I live on Long Island with my family.
+                    <br> <br>I have completed my M.Sc in computer science from a well known university in India and
+                    graduated with 4.0 GPA. <br>
+                    I have over 9 years of experience in QA field. In the past 9 years, I have worked in various fields
+                    such as e-commerce, education software, banking and Advertising. I am very passionate about what I
+                    work on and I have received many awards for my performance.
+                    <br>
+                    <br>
+                    In my spare time, I usually like to spend my time cooking, painting, travelling. I also like to play
+                    board games with my kids. In the coming years, I'd like to spend some of my spare time volunteering.
+                    I am a big fan of animated movies and I think I am more excited about watching
+                    them than my kids. I am running out of ideas to write about myself. Hope this gives enough details
+                    about me. Once again, thank you for visiting my page.
+                </p>
+            </div>
+        </div>
+        <div class="contactMeDiv" id="contactMeDiv">
+            <h2 class="heading2">Contact Me</h2>
+            <form class="contactMe">
+                Full Name:<br>
+                <input type="text" name="firstname" id='fName'>
+                <br>
+                <br>Email address:<br>
+                <input type="text" name="email" id='email'>
+                <br>
+                <br>Message:<br>
+                <textarea name="message" placeholder='Please enter your message here'></textarea><br>
+                <br><input type="submit" name="submitInfo">
+            </form>
+        </div>
+        <div class="portfolioDiv" id="portfolioDiv">
+            <h2 class="heading2">Portfolio</h2>
+            <div id="partTimeGigsImg">
+                <img class="portfolioImg" src="assets/images/SP_PARTTIME_GIGS.jpg" alt="MO">
+            </div>
+            <div id="rpgGameImg">
+                <img class="portfolioImg" src="assets/images/SP_RPG_GAME.jpg" alt="MO">
+            </div>
+            <div id="triviaGameImg">
+                <img class="portfolioImg" src="assets/images/SP_TRIVIA.jpg" alt="MO">
+            </div>
+            <div id="wordGuessGameImg">
+                <img class="portfolioImg" src="assets/images/SP_Word_Guess_Game.jpg" alt="centris">
+            </div>
+        </div>
+        <div class="footer" id="footer">My Footer</div>
+    </div>
+</body>
+<script>
+$("a[href^='#']").click(function(e) {
+	e.preventDefault();
+	
+	var position = $($(this).attr("href")).offset().top;
+
+	$("body, html").animate({
+		scrollTop: position
+	} 5ms );
+});
+</script>
 </html>
