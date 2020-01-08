@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="contents" id="contents">
-            <h2 class="heading2">About Me</h2>
+            <h1 class="heading2">About Me</h1>
             <br clear="all">
             <img id="myPic" src="assets/images/Myimage.jpg" alt="Swarupa Popuri" width="240">
             <div class="myDetails">
@@ -43,7 +43,7 @@
             </div>
         </div>
         <div class="contactMeDiv" id="contactMeDiv">
-            <h2 class="heading2">Contact Me</h2>
+            <h1 class="heading2">Contact Me</h1>
             <form class="contactMe">
                 Full Name:<br>
                 <input type="text" name="firstname" id='fName'>
@@ -57,18 +57,26 @@
             </form>
         </div>
         <div class="portfolioDiv" id="portfolioDiv">
-            <h2 class="heading2">Portfolio</h2>
+            <h1 class="heading2">Portfolio</h1>
             <div id="partTimeGigsImg">
-                <img class="portfolioImg" src="assets/images/SP_PARTTIME_GIGS.jpg" alt="MO">
+                <a id="partTimeGigsLink" href = "https://rupagit.github.io/awesomeFive/"  target="_blank">
+                    <img id="partTimeGigsPic" class="portfolioImg" src="assets/images/SP_PARTTIME_GIGS.jpg" alt="PartTimeGigs">
+                </a>
             </div>
             <div id="rpgGameImg">
-                <img class="portfolioImg" src="assets/images/SP_RPG_GAME.jpg" alt="MO">
+                <a id="rpgGameLink" href = "https://rupagit.github.io/SP-TriviaGame/"  target="_blank">
+                    <img id="rpgGamePic" class="portfolioImg" src="assets/images/SP_RPG_GAME.jpg" alt="RPG Game">
+                </a>
             </div>
             <div id="triviaGameImg">
-                <img class="portfolioImg" src="assets/images/SP_TRIVIA.jpg" alt="MO">
+                <a id="triviaGameLink" href = "https://rupagit.github.io/SP-TriviaGame/"  target="_blank">
+                    <img id="triviaGamePic" class="portfolioImg" src="assets/images/SP_TRIVIA.jpg" alt="Trivia Game">
+                </a>
             </div>
             <div id="wordGuessGameImg">
-                <img class="portfolioImg" src="assets/images/SP_Word_Guess_Game.jpg" alt="centris">
+                <a id="wordGuessGameLink" href = "https://rupagit.github.io/SP-WordGuessGame/"  target="_blank">
+                    <img id="wordGamePic" class="portfolioImg" src="assets/images/SP_Word_Guess_Game.jpg" alt="Word Guess Game">
+                </a>
             </div>
         </div>
         <div class="footer" id="footer">My Footer</div>
@@ -82,7 +90,7 @@ $("a[href^='#']").click(function(e) {
 
 	$("body, html").animate({
 		scrollTop: position
-	} 5ms );
+	}, 5);
 });
 </script>
 </html>
